@@ -1,11 +1,23 @@
-.scrinshots {
-  display: flex;
-  flex-wrap: wrap;
+.scrinshots__wrapper {
+  padding: 25px 15px 0 15px;
+
+  @media(min-width: @width-tablet) {
+    padding: 25px 20px 5px 20px;
+  }
+
+  @media(min-width: @width-desktop) {
+    padding: 45px 50px 25px 50px;
+  }
 }
 
-.scrinshots__text-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+.scrinshots__title {
+  margin-bottom: 15px;
 
+  @media(min-width: @width-tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media(min-width: @width-desktop) {
+    margin-bottom: 45px;
+  }
 }

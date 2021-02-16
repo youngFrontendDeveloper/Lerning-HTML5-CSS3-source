@@ -1,26 +1,48 @@
 .description {
   width: 100%;
+  margin-bottom: 27px;
 
   @media(min-width: @width-tablet) {
     width: 48%;
+    justify-content: center;
   }
-}
 
-.description {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
+  @media(min-width: @width-desktop) {
+    max-width: 575px;
+  }
 }
 
 .description__img {
   width: 202px;
   height: 153px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+
 }
 
 .description__title {
   flex-basis: 260px;
+  flex-grow: 1;
+
+  font-size: 18px;
+  line-height: 1.25;
+  color: #445161;
+
+  @media(min-width: @width-tablet) {
+    flex-basis: 220px;
+    flex-grow: 0;
+    font-size: 20px;
+  }
+
+  @media(min-width: @width-desktop) {
+    flex-grow: 1;
+    font-size: 24px;
+  }
 }
 
 .description__body {
   display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  color: @color-dark;
 }
