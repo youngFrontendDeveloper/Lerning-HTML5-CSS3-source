@@ -1,0 +1,19 @@
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__text-box {
+  max-width: 100%;
+  flex-grow: 1;
+
+  @media(min-width: @width-tablet) {
+    max-width: 300px;
+    flex-basis: 250px;
+  }
+
+  @media(min-width: @width-desktop) {
+    max-width: 580px;
+
+  }
+}

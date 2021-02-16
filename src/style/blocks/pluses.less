@@ -1,0 +1,57 @@
+.pluses {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: @color-grey-bg;
+}
+
+.pluses__wrapper {
+  padding: 25px 15px 0px;
+
+  @media(min-width: @width-tablet) {
+    padding: 25px 20px 5px 20px;
+  }
+
+  @media(min-width: @width-desktop) {
+    padding: 45px 50px 35px 50px;
+  }
+}
+
+.pluses__text-box {
+  width: 100%;
+}
+
+.pluses__title {
+  margin-bottom: 22px;
+}
+
+.pluses__text {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-left: 42px;
+
+  @media(min-width: @width-tablet) {
+    width: 48%;
+    margin-bottom: 33px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 34px;
+    height: 35px;
+    background-color: @color-base;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icon-plus.svg);
+  }
+}

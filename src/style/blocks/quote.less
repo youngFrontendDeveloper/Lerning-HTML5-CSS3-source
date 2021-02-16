@@ -1,0 +1,39 @@
+.quote {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.quote__img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+
+  @media(min-width: @width-tablet) {
+    width: 100px;
+    height: 100px;
+  }
+
+  // @media(min-width: @width-desktop) {
+  //   width: 483px;
+  // }
+}
+
+.quote__caption {
+  flex-basis: 260px;
+}
+
+.quote__body {
+  width: 100%;
+  margin: 0;
+
+  @media(min-width: @width-tablet) {
+    width: 300px;
+  }
+
+  @media(min-width: @width-desktop) {
+    width: 483px;
+  }
+}
