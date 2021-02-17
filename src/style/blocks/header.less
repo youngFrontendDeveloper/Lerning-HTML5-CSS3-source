@@ -1,9 +1,17 @@
 .header {
   justify-content: space-between;
-  background-color: #445161;
+  background: rgba(68, 81, 97, 0.5) url(../img/logo.jpg);
+  background-size: cover;
+  background-blend-mode: color;
+
+  @media(min-width: @width-tablet) {
+    background-color: #445161;
+    background-image: none;
+  }
 }
 
 .header__wrapper {
+  position: relative;
   padding: 25px 15px 15px;
 
   @media(min-width: @width-tablet) {
@@ -18,7 +26,6 @@
 .header__text-wrap {
   width: 100%;
   color: @color-white;
-
 
   @media(min-width: @width-tablet) {
     width: 48%;
@@ -61,11 +68,15 @@
 }
 
 .header__img-wrap {
+  display: none;
   width: 100%;
   height: fit-content;
 
+
   @media(min-width: @width-tablet) {
+    display: block;
     width: 47%;
+    height: fit-content;
   }
 
   @media(min-width: @width-desktop) {
