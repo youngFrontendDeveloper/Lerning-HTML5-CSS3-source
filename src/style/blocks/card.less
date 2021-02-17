@@ -6,14 +6,16 @@
   padding: 14px 2px 20px;
   background-color: @color-base;
   border-radius: 5px;
+  transition: 0.2s;
 
   @media(min-width: @width-tablet) {
     flex-basis: 300px;
   }
 
-  // @media(min-width: @width-tablet) {
-  //   flex-basis: 300px;    
-  //   }
+  // &:hover {
+  //   box-shadow: 0px 0px 20px 2px;
+  //   cursor: pointer;
+  // }
 }
 
 .card__title {
@@ -53,6 +55,7 @@
   text-transform: uppercase;
   background-color: @color-white;
   border-radius: 5px;
+  transition: 0.2s;
 
   &:hover {
     background-color: @color-hover;

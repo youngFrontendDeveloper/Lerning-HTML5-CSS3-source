@@ -35,6 +35,7 @@
 .messengers__icq {
   &::before {
     background-image: url(../img/icon-icq.svg);
+
   }
 }
 
@@ -55,28 +56,43 @@
   color: @color-white;
   font-size: inherit;
   line-height: inherit;
+  transition: 0.2s;
 
   &:hover {
     color: @color-hover;
   }
 }
 
-// .link__skype {
+.messengers__item:hover>.messengers__link {
+  color: @color-hover;
+}
 
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 20px;
-//     height: 20px;
-//     background-image: url(/img/icon-skype.svg);
-//   }
-// }
+.messengers__item:hover {
+  &::before {
+    cursor: pointer;
+  }
+}
 
-// .link-skype {
-//   background-image: url(/img/icon-skype.svg);
-//   fill: red;
-//   background-repeat: no-repeat;
-//   background-position: 0 left;
-// }
+.messengers__icq:hover {
+  &::before {
+    background-image: url(../img/icon-icq-hover.svg);
+  }
+}
+
+.messengers__skype:hover {
+  &::before {
+    background-image: url(../img/icon-skype-hover.svg);
+  }
+}
+
+.messengers__phone:hover {
+  &::before {
+    background-image: url("../img/icon-phone copy.svg");
+  }
+}
+
+.messengers__mail:hover {
+  &::before {
+    background-image: url("../img/icon-email copy.svg");
+  }
+}
