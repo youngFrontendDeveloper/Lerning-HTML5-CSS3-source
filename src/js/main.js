@@ -62,18 +62,18 @@
 
 // Кнопка вверх, -  исчезновение-появление
 
-// $(window).scroll(function() {
-//   if($(this).scrollTop() != 0) {
-//     $('.to-top').fadeIn();
-//   } else {
-//     $('.to-top').fadeOut();
-//   }
-// });
+$(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+    $('.to-top').fadeIn();
+  } else {
+    $('.to-top').fadeOut();
+  }
+});
 
 // Кнопка вверх, - пролистывание вверх
-// $('.to-top').on('click', function() {
-//   $('html, body').stop().animate({scrollTop : 0}, 300);
-// });
+$('.to-top').on('click', function() {
+  $('html, body').stop().animate({scrollTop : 0}, 300);
+});
 
 
 //Открытие-закрытие меню
