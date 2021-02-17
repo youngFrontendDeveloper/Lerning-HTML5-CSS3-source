@@ -4,12 +4,17 @@
 
 .social__link {
   display: block;
-  width: 51px;
-  height: 51px;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+}
+
+.social__link:not(last-of-type) {
+  margin-right: 6px;
 }
 
 .social__link:hover>.social__icon {
-  fill: rgb(233, 233, 233);
+  fill: @color-hover;
 }
 
 .social__icon {

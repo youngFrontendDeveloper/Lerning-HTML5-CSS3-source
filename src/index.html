@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
   <title>Artboard</title>
 </head>
@@ -193,8 +195,8 @@
   <!-- +++++++++++ Buy +++++++++++++ -->
   <section class="buy">
     <div class="container buy__wrapper d-flex">
-      <h2 class="title">Buy it now</h2>
-      <div class="card">
+      <h2 class="title buy__title">Buy it now</h2>
+      <div class="card buy__card">
         <h3 class="card__title">Standart</h3>
         <p class="card__price"><span>$</span>100</p>
         <ol class="card__description">
@@ -205,7 +207,7 @@
         </ol>
         <a href="#" class="card__link">buy</a>
       </div><!-- end card -->
-      <div class="card">
+      <div class="card buy__card">
         <h3 class="card__title">Premium</h3>
         <p class="card__price"><span>$</span>150</p>
         <ol class="card__description">
@@ -220,7 +222,7 @@
         </ol>
         <a href="#" class="card__link">buy</a>
       </div><!-- end card -->
-      <div class="card">
+      <div class="card buy__card">
         <h3 class="card__title">Lux</h3>
         <p class="card__price"><span>$</span>200</p>
         <ol class="card__description">
@@ -243,53 +245,53 @@
   </section>
   <!-- +++++++++++ Contacts +++++++++++++ -->
   <section class="contacts">
-    <div class="container buy__wrapper d-flex">
-      <h2 class="title title--color--white">Contacts</h2>
+    <div class="container contacts__wrapper d-flex">
+      <h2 class="title title--color--white contacts__title">Contacts</h2>
       <form action="post" class="form">
         <input class="form__item" type="text" placeholder="Your name:">
         <input class="form__item" type="email" placeholder="Your email:">
-        <textarea class="form__item" name="user-mesage" placeholder="Your message:"></textarea>
-        <button type="submit">Send</button>
+        <textarea class="form__item form__message" name="user-mesage" placeholder="Your message:"></textarea>
+        <button class="form__item form__button" type="submit">Send</button>
       </form>
       <div class="contacts__text-wrap">
         <ul class="messengers contacts__messengers">
-          <li class="messengers__item">
-            <a href="skype:znanie16" class="messengers__link">here_your_login_skype</a>
+          <li class="messengers__item messengers__skype">
+            <a href=" skype:1234587" class="messengers__link">here_your_login_skype</a>
           </li>
-          <li class="messengers__item">
+          <li class="messengers__item messengers__icq">
             <a href="icq:279679659" class="messengers__link">279679659</a>
           </li>
-          <li class="messengers__item">
+          <li class="messengers__item messengers__mail">
             <a href="mailto:psdhtmlcss@mail.ru" class="messengers__link">psdhtmlcss@mail.ru</a>
           </li>
-          <li class="messengers__item">
-            <a href="tel:+800045685555" class="messengers__link">80 00 4568 55 55</a>
+          <li class="messengers__item messengers__phone">
+            <a href="tel:+800045685555" class="messengers__link link-phone">80 00 4568 55 55</a>
           </li>
         </ul>
         <ul class="social contacts__social">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#">Твиттер
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#">Вконтакте
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#">Гугле
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#icon-google"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#">Фейсбук
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
@@ -301,9 +303,9 @@
   </section>
   <!-- +++++++++++ Footer +++++++++++++ -->
   <footer class="footer">
-    <div class="container buy__wrapper ">
-      <p>Copyright &copy; 2014</p>
-      <p>Product name · PSD HTML CSS</p>
+    <div class="container footer__wrapper d-flex">
+      <p class="footer__copy">Copyright &copy; 2021</p>
+      <p class="footer__text">Product name · PSD HTML CSS</p>
     </div><!-- end container -->
   </footer>
 

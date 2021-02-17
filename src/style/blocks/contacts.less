@@ -1,6 +1,28 @@
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background-color: #445162;
+}
+
+.contacts__wrapper {
+  padding: 25px 15px 25px;
+
+  @media(min-width: @width-tablet) {
+    justify-content: center;
+    padding: 25px 30px 20px;
+  }
+
+  @media(min-width: @width-desktop) {
+    padding: 45px 50px 50px 50px;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+
+  @media(min-width: @width-tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media(min-width: @width-desktop) {
+    margin-bottom: 43px;
+  }
 }

@@ -1,5 +1,11 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-basis: 280px;
+  padding: 14px 2px 20px;
+  background-color: @color-base;
+  border-radius: 5px;
 
   @media(min-width: @width-tablet) {
     flex-basis: 300px;
@@ -8,4 +14,47 @@
   // @media(min-width: @width-tablet) {
   //   flex-basis: 300px;    
   //   }
+}
+
+.card__title {
+  padding-bottom: 7px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.25;
+  color: @color-white;
+}
+
+.card__price {
+  width: 99%;
+  padding: 25px 107px 16px 107px;
+  font-size: 40px;
+  line-height: 30px;
+  color: @color-base;
+  background-color: @color-white;
+}
+
+.card__description {
+  padding: 8px 20px 16px;
+  list-style-type: decimal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @color-white;
+}
+
+.card__link {
+  display: block;
+  width: 262px;
+  height: 43px;
+  font-size: 18px;
+  line-height: 43px;
+  font-weight: bold;
+  color: @color-base;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @color-white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: @color-hover;
+  }
 }

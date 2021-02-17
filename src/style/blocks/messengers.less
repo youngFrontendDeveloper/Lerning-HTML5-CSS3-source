@@ -1,0 +1,82 @@
+.messengers {
+  width: 230px;
+  margin-bottom: 25px;
+
+  @media(min-width: @width-desktop) {
+    margin-bottom: 43px;
+  }
+}
+
+.messengers__item {
+  position: relative;
+  padding-left: 27px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.messengers__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.messengers__skype {
+  &::before {
+    background-image: url(../img/icon-skype.svg);
+  }
+}
+
+.messengers__icq {
+  &::before {
+    background-image: url(../img/icon-icq.svg);
+  }
+}
+
+.messengers__mail {
+  &::before {
+    background-image: url(../img/icon-email.svg);
+  }
+}
+
+.messengers__phone {
+  &::before {
+    background-image: url(../img/icon-phone.svg);
+  }
+}
+
+.messengers__link {
+  display: block;
+  color: @color-white;
+  font-size: inherit;
+  line-height: inherit;
+
+  &:hover {
+    color: @color-hover;
+  }
+}
+
+// .link__skype {
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 20px;
+//     height: 20px;
+//     background-image: url(/img/icon-skype.svg);
+//   }
+// }
+
+// .link-skype {
+//   background-image: url(/img/icon-skype.svg);
+//   fill: red;
+//   background-repeat: no-repeat;
+//   background-position: 0 left;
+// }

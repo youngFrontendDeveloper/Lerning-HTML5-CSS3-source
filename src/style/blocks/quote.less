@@ -48,17 +48,36 @@
     width: 30px;
     height: 24px;
     left: -12px;
-    top: 35%;
+    top: 50%;
     background-color: @color-quote-bg;
     transform: rotate(52deg);
+
   }
 }
 
 .quote__body {
+  position: relative;
   width: 100%;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  z-index: 1;
+
 
   @media(min-width: @width-desktop) {
     max-width: 458px;
   }
+}
+
+.quote__signature {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-signature;
 }
