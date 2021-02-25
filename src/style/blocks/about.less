@@ -37,12 +37,12 @@
 }
 
 .about__video-wrap {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  // height: 70%;
   margin-top: 15px;
 
   @media(min-width: @width-tablet) {
-    width: 38%;
+    width: 39%;
     margin-top: 0;
   }
 
@@ -52,7 +52,21 @@
   }
 }
 
-.about__video-wrap iframe {
+.about__video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.about__video-wrap iframe,
+.video-container object, 
+.video-container embed  {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: fit-content;
+  height: 100%;
+
 }
